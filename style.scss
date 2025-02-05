@@ -7,14 +7,14 @@ body {
   overflow-x: hidden;
 
   .title {
-    font-size: 180px;
+    font-size: 120px;
     font-family: garet, sans-serif;
     color: white;
     height: 100dvh;
     display: flex;
     flex-direction: column-reverse;
+    text-align: center;
     justify-content: center;
-    opacity: 0;
   }
 
   .title h1 {
@@ -24,7 +24,14 @@ body {
   .title h2 {
     font-weight: normal;
     margin: 0;
+    z-index: 2;
   }
+
+  .title .visible {
+    color: white;
+    mix-blend-mode: difference;
+  }
+
 
   .cloud {
     position: absolute;
@@ -35,7 +42,26 @@ body {
     background-image: url("./Rendu/cloud.svg");
     background-size: cover;
     background-repeat: no-repeat;
-    animation: cloud 20s linear infinite;
   }
 ;
+}
+
+.cloudSeparator {
+  display: flex;
+}
+
+.cloudSeparator #cloud1 {
+  width: 110%;
+  height: 800px;
+  background-image: url("./Rendu/cloud.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.cloudSeparator #cloud2 {
+  width: 150%;
+  height: 150%;
+  background-image: url("./Rendu/cloud.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
