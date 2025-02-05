@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "gsap": "^3.12.7",
+    "scrollreveal": "^4.0.9"
+  },
+  "scripts": {
+    "dev": "vite",
+    "start": "node server.js"
+  },
+  "devDependencies": {
+    "vite": "^6.0.11"
+  }
+}
