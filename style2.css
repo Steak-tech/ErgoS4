@@ -1,0 +1,24 @@
+body {
+  background-color: #0b1d3c;
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  background-image: url("./Rendu/Earth.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+}
+
+.rocket {
+  position: absolute;
+  width: 100px;
+  bottom: 0px;
+  left: 0px;
+}
+
+/*# sourceMappingURL=style2.css.map */
