@@ -1,45 +1,57 @@
 body {
-  background-color: #0b1d3c;
-  color: white;
-  text-align: center;
+  margin: 0;
+  padding: 0;
   font-family: Arial, sans-serif;
+  text-align: center;
+  color: white;
   overflow: hidden;
-  background-image: url('./Rendu/Earth.jpg');
+  background-image: url('Earth.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
-.container {
+.scene {
   position: relative;
+  width: 100vw;
   height: 100vh;
-  width: 40%;
-  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   display: flex;
-  flex-direction: column;
-  text-align: center;
-
-
-  h1 {
-    font-size: 40px;
-  }
-  p {
-    text-align: justify;
-  }
-
-  a{
-    background-color: #0b1d3c;
-    padding: 1rem;
-    border-radius: 15px;
-    text-decoration: none;
-    color: white;
-  }
+  align-items: center;
+  justify-content: center;
+  transition: background-image 1s ease-in-out;
 }
 
-.rocket {
-  position: absolute;
-  width: 100px;
-  bottom: 0px;
-  left: 0px;
+.content {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 10px;
+  width: 60%;
+}
+
+.title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+.text a {
+  background-color: #861388 ;
+  padding: 1rem;
+  border-radius: 15px;
+  text-decoration: none;
+  color: white;
+  transition: 0.2s ease;
 }
 
 
+.text a:hover {
+  background-color: #590e5b;
+  scale: 1.1;
+}

@@ -2,11 +2,23 @@ body {
   background-image: url("./Rendu/background.svg");
   background-size: cover;
   background-repeat: no-repeat;
-  max-width: 100vw;
+  min-width: 100vw;
   min-height: 5000px;
   overflow-x: hidden;
 }
-body .title {
+
+.cloud {
+  position: absolute;
+  top: 0;
+  left: -600px;
+  width: 25%;
+  height: 50%;
+  background-image: url("./Rendu/cloud.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.titre {
   font-size: 120px;
   font-family: garet, sans-serif;
   color: white;
@@ -17,27 +29,17 @@ body .title {
   justify-content: center;
   margin-bottom: 20rem;
 }
-body .title h1 {
+.titre h1 {
   margin: 0;
 }
-body .title h2 {
+.titre h2 {
   font-weight: normal;
   margin: 0;
   z-index: 2;
 }
-body .title .visible {
+.titre .visible {
   color: white;
   mix-blend-mode: difference;
-}
-body .cloud {
-  position: absolute;
-  top: 0;
-  left: -600px;
-  width: 25%;
-  height: 50%;
-  background-image: url("./Rendu/cloud.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .cloudSeparator {
@@ -65,7 +67,7 @@ body .cloud {
   position: absolute;
 }
 
-.croute {
+.element {
   margin-top: 1200px;
   width: 100%;
   display: flex;
@@ -76,16 +78,131 @@ body .cloud {
   flex-direction: column;
   align-items: center;
 }
-.croute h1 {
+.element h1 {
   margin: 0;
 }
-.croute .box {
+.element .box {
   width: 50%;
   font-size: 30px;
   background-color: rgba(14, 14, 79, 0.7);
   border-radius: 15px;
   padding: 1rem;
   backdrop-filter: blur(30px);
+}
+
+.manteau {
+  margin-top: 300px;
+  align-items: baseline;
+}
+.manteau .box {
+  height: 25vh;
+  width: 20rem;
+  font-size: 22px;
+  align-items: center;
+  display: flex;
+  text-align: justify;
+}
+.manteau h1 {
+  font-size: 75px;
+}
+.manteau .manteau_Ext {
+  width: 100%;
+  position: relative;
+}
+.manteau .manteau_Ext .sides {
+  width: 50%;
+  position: absolute;
+  font-size: 30px;
+  background-color: rgba(14, 14, 79, 0.7);
+  padding: 1rem;
+}
+.manteau .manteau_Ext .right {
+  right: -8px;
+  border-radius: 15px 0 0 15px;
+}
+.manteau .manteau_Ext .left {
+  left: -8px;
+  top: 800px;
+  border-radius: 0 15px 15px 0;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  body {
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  .title {
+    font-size: 40px;
+    width: 100%;
+    height: fit-content;
+  }
+  .cloud {
+    top: -10;
+    left: -200px;
+    background-size: contain;
+  }
+  .element {
+    font-size: 60px;
+  }
+  .element .box {
+    width: 80%;
+    font-size: 20px;
+  }
+  .manteau h1 {
+    font-size: 50px;
+  }
+  .manteau .box {
+    width: 100%;
+    font-size: 18px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  body {
+    background-size: contain;
+  }
+  .titre {
+    font-size: 20px;
+    height: fit-content;
+    margin-top: 5rem;
+  }
+  .cloud {
+    top: 50px;
+    left: -100px;
+    background-size: contain;
+  }
+  .cloudSeparator {
+    display: none;
+  }
+  .element {
+    font-size: 20px;
+    width: 40%;
+    text-align: center;
+  }
+  .element .box {
+    width: 100%;
+    font-size: 8px;
+    text-align: justify;
+  }
+  .croute {
+    margin: 30px auto;
+  }
+  .manteau_Ext {
+    width: 100%;
+    align-items: start;
+  }
+  .manteau_Ext .manteau {
+    margin: 30px auto;
+  }
+  .manteau_Ext .manteau h1 {
+    font-size: 20px;
+  }
+  .manteau_Ext .manteau .box {
+    font-size: 8px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

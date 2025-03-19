@@ -1,31 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Voyage au centre de la terre</title>
     <link rel="stylesheet" href="./style.css">
     <script src="script.js" defer type="module"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<div class="title">
+<div class="titre" title="Bienvenue au voyage au centre de la terre" tabindex="1">
     <h1>Earth Trip</h1>
     <h2 class="visible">Welcome To</h2>
 </div>
 <div class="cloud"></div>
-<div class="cloudSeparator">
+<div class="cloudSeparator" title="Nuages qui se séparent pour laisser apparaitre un fond représentant la terre" tabindex="2">
     <div id="cloud1"></div>
     <div id="cloud2"></div>
 </div>
 
-<section class="croute">
+<section class="element croute" title="La croute" tabindex="3">
     <h1>La croûte</h1>
-    <div class="box">
-        <p>La croûte terrestre est la fine coquille qui recouvre la planète terre.</p>
-        <p>Elle se divise en deux territoires:</p>
+    <div class="box" >
+        <p tabindex="4">La croûte terrestre est la fine coquille qui recouvre la planète terre.</p>
+        <p tabindex="5">Elle se divise en deux territoires:</p>
         <ul>
-            <li>La croûte continentale, immense et épaisse, formant nos montagnes et nos continents.</li>
-            <li>La croûte océanique, plus fine mais plus dense, qui formait les fonds marins.</li>
+            <li tabindex="6">La croûte continentale, immense et épaisse, formant nos montagnes et nos continents.</li>
+            <li tabindex="7">La croûte océanique, plus fine mais plus dense, qui forme les fonds marins.</li>
         </ul>
+    </div>
+</section>
+<section class="element manteau" title="Le manteau" tabindex="8">
+    <h1>Le manteau</h1>
+    <div class="manteau_Ext">
+        <div class="box">
+            <p tabindex="9">Le manteau est la couche la plus épaisse qui compose la planète Terre, elle est divisée en deux parties qui protègent le noyau. </p>
+        </div>
+        <div class="right sides">
+            <p tabindex="10">Le manteau supérieur, où flotte l’asthénosphère, une couche visqueuse qui fait bouger les continents et donne naissance aux tremblements de terre et aux volcans.</p>
+        </div>
+        <div class="left sides">
+            <p tabindex="11">Le manteau inférieur, plus dense et brûlant, où la chaleur peut atteindre 3 000°C ! Il représente plus de 50 % du volume total de la terre. Il est profond de plus de 2 000 km !</p>
+        </div>
     </div>
 </section>
 </body>
